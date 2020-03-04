@@ -10,12 +10,10 @@
           justify-content: space-between;
   height: 60px;
   margin-bottom: 50px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+  margin-left: 50px; }
 
 .moyo-img {
-  margin-top: 0;
-  margin-left: 50px; }
+  margin-top: 0 auto; }
 
 .nav__list {
   display: -webkit-box;
@@ -75,7 +73,7 @@
   -ms-flex-line-pack: justify;
       align-content: space-between;
   margin: 0 25px 50px;
-  width: 198px;
+  width: 200px;
   height: 403px;
   background: #fff;
   border: 1px solid #f3f3f3;
@@ -111,7 +109,7 @@
     margin: 0;
     padding-left: 15px; }
 
-.card__rating > div {
+.card__rating--stars {
   background-image: url("../images/star.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -119,7 +117,7 @@
   width: 15px;
   margin-right: 4px; }
 
-.stars--1 div:nth-child(-n + 4) {
+.card__rating--stars:nth-child(-n + 4) {
   background-image: url("../images/star-active.svg"); }
 
 .card__price {
@@ -160,7 +158,7 @@
   font-size: 14px;
   line-height: 38px;
   color: white;
-  width: 168px;
+  width: 100%;
   height: 38px;
   background-color: #00acdc;
   border-radius: 5px;
