@@ -32,9 +32,12 @@
   line-height: 14px;
   color: black;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s; }
 
 .nav__link:hover {
+  background-color: #fff;
   color: #00acdc; }
 
 .is-active {
