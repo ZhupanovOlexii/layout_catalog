@@ -19,12 +19,16 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
 
   &-img {
-    margin: 30px auto 45px;
+    margin: 20px auto 35px;
     transition: transform 0.3s;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 
   &-img:hover {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2);
+    box-shadow: 0 0 0 3px rgb(156, 145, 145);
+
   }
 
   &__info {
@@ -84,7 +88,7 @@
 .card__price-tittle {
   font-size: 11px;
   line-height: 13px;
-  
+
 }
 
 .card__price-value {
