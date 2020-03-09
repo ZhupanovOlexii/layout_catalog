@@ -1,7 +1,6 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -10,10 +9,14 @@
           justify-content: space-between;
   height: 60px;
   margin-bottom: 50px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
 
 .moyo-img {
-  margin-top: 0 auto; }
+  margin-top: 0 auto;
+  width: 40px;
+  height: 40px; }
 
 .nav__list {
   display: -webkit-box;
@@ -54,11 +57,9 @@
     background-color: #00acdc; }
 
 .catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 50px 48px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -76,15 +77,12 @@
           box-sizing: border-box;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  margin: 0 25px 50px;
   width: 200px;
   height: 403px;
   background: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  padding: 0 14px;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07); }
+  padding: 0 14px; }
   .card-img {
     margin: 20px auto 35px;
     -webkit-transition: -webkit-transform 0.3s;
@@ -117,7 +115,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 15px; }
+    margin-bottom: 14px; }
   .card__feedback {
     font-size: 11px;
     line-height: 13px;
@@ -154,9 +152,6 @@
   line-height: 13px; }
 
 .card__price-value {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
@@ -176,8 +171,7 @@
   font-size: 14px;
   line-height: 38px;
   color: white;
-  width: 100%;
-  height: 40px;
+  height: 38px;
   background-color: #00acdc;
   border-radius: 5px;
   text-decoration: none;
