@@ -62,8 +62,7 @@
   grid-gap: 50px 48px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 1200px; }
+          justify-content: center; }
 
 .card {
   display: -webkit-box;
